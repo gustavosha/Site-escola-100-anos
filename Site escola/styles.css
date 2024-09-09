@@ -1,0 +1,88 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.book {
+    width: 1200px;
+    height: 800px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow: hidden;
+}
+
+.page {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    background-color: #fafafa;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+    background-color: #f5f5dc;
+    font-size: 48px;
+    width: 100%;
+    box-shadow: none;
+}
+
+.left-page, .right-page {
+    display: none;
+    border: 0;
+}
+
+.left-page {
+    left: 0;
+    border-right: 2px solid #ccc;
+}
+
+.right-page {
+    left: 50%;
+    border-left: 2px solid #ccc;
+}
+
+.page h1 {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Great Vibes', cursive;
+}
+
+.page p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.navigation button:hover {
+    background-color: #555;
+}
